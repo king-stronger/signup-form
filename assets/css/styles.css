@@ -27,3 +27,8 @@ button {
     outline: none;
     cursor: pointer;
 }
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("../fonts/Norse-Bold.otf");
+}
