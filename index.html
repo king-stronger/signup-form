@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <main>
-        <aside>
-            <img src="assets/img/background-image.jpg" alt="Background Image">
+    <main class="main">
+        <aside class="aside">
+            <img src="assets/img/background-image.jpg" alt="Background Image" class="background-image">
             <div class="logo">
                 <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Logo">
                 <span>Odin</span>
@@ -17,57 +17,60 @@
             <div class="image-credit">Photo by Sreeja Papani on unsplash</div>
         </aside>
 
-        <section>
-            <p>
-                This is not a real online service ! You know you need something like this in your life to help you realize your deepest dreams.
-                Sign up now to get started.
-            </p>
+        <section class="section">
+            <div class="section-header flow">
+                <p>
+                    This is not a real online service ! You know you need something like this in your life to help you realize your deepest dreams.
+                    Sign up now to get started.
+                </p>
+    
+                <p>
+                    You know you want to
+                </p>
+            </div>
 
-            <p>
-                You know you want to
-            </p>
-
-            <form action="">
-                <fieldset>
-
-                    <legend>Let's do this !</legend>
+            <form action="" class="form flow">
+                <div class="form-fields">
+                    <h2>Let's do this !</h2>
     
                     <div class="form-group">
                         <label for="firstname">First Name</label>
-                        <input type="text" name="firstname" id="firstname">
+                        <input type="text" name="firstname" id="firstname" required>
                     </div>
     
                     <div class="form-group">
                         <label for="lastname">Last Name</label>
-                        <input type="text" name="lastname" id="lastname">
+                        <input type="text" name="lastname" id="lastname" required>
                     </div>
     
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
     
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="phone" name="phone" id="phone">
+                        <input type="number" name="phone" id="phone" required>
                     </div>
     
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                     </div>
     
                     <div class="form-group">
-                        <label for="password">First Name</label>
-                        <input type="password" name="password" id="password">
+                        <label for="confirm">Confirm Password</label>
+                        <input type="password" name="confirm" id="confirm" required>
                     </div>
-                </fieldset>
+                </div>
 
-                <button type="submit">Create Account</button>
-
-                <p>
-                    Already have an account ? <a href="#">Log in</a>
-                </p>
+                <div class="form-buttons flow">
+                    <button type="submit" class="submit">Create Account</button>
+    
+                    <p>
+                        Already have an account ? <a href="#" class="login">Log in</a>
+                    </p>
+                </div>
             </form>
         </section>
     </main>
